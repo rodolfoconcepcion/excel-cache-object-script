@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25" zv="Cache for Windows (x86-64) 2015.2 (Build 664_3_15706U)" ts="2016-04-14 16:30:56">
+<Class name="Excel.Alignment">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32152.780186</TimeChanged>
+<TimeCreated>62063,39423.145426</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Horizontal">
+<Description>
+Align horizontally
+Center,Left,Right</Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",Center,Left,Right"/>
+<Parameter name="XMLNAME" value="ss:Horizontal"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Vertical">
+<Description>
+Vertical Alignment
+Top,Center,Bottom</Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",Top,Center,Bottom"/>
+<Parameter name="XMLNAME" value="ss:Vertical"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="WrapText">
+<Description>
+1- if the translation of the text in a cell</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:WrapText"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Rotate">
+<Description>
+text Rotation
+90</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Rotate"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Alignment">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32152.780186</TimeChanged>
+<TimeCreated>62063,39423.145426</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Horizontal">
+<Description>
+Align horizontally
+Center,Left,Right</Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",Center,Left,Right"/>
+<Parameter name="XMLNAME" value="ss:Horizontal"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Vertical">
+<Description>
+Vertical Alignment
+Top,Center,Bottom</Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",Top,Center,Bottom"/>
+<Parameter name="XMLNAME" value="ss:Vertical"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="WrapText">
+<Description>
+1- if the translation of the text in a cell</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:WrapText"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Rotate">
+<Description>
+text Rotation
+90</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Rotate"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Border">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32234.241045</TimeChanged>
+<TimeCreated>62063,42942.016697</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="LineStyle">
+<Description>
+line Style
+Continuous,DashDot,DashDotDot</Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",Continuous,DashDot,DashDotDot"/>
+<Parameter name="XMLNAME" value="ss:LineStyle"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Color">
+<Description>
+Color line
+#808080,#FF0000</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Color"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Weight">
+<Description>
+The thickness of the line
+1,2,3</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Weight"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Border">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32234.241045</TimeChanged>
+<TimeCreated>62063,42942.016697</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="LineStyle">
+<Description>
+line Style
+Continuous,DashDot,DashDotDot</Description>
+<Type>%String</Type>
+<Parameter name="VALUELIST" value=",Continuous,DashDot,DashDotDot"/>
+<Parameter name="XMLNAME" value="ss:LineStyle"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Color">
+<Description>
+Color line
+#808080,#FF0000</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Color"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Weight">
+<Description>
+The thickness of the line
+1,2,3</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Weight"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Cell">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,66522.658462</TimeChanged>
+<TimeCreated>62062,57080.591593</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="StyleId">
+<Type>%String</Type>
+<InitialExpression>"Default"</InitialExpression>
+<Parameter name="XMLNAME" value="ss:StyleID"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="MergeAcross">
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:MergeAcross"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="MergeDown">
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:MergeDown"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Data">
+<Type>Excel.Data</Type>
+</Property>
+
+<Method name="SetData">
+<Description>
+Record data in the cell
+Attention! When DateTime record serve $Horolog</Description>
+<FormalSpec>value:%String,type:%String="String",styleid:%String="Default",expandleft:%Integer="",expanddown:%Integer=""</FormalSpec>
+<Implementation><![CDATA[
+	if type="DateTime" {
+		//set value=$zdate(value,3)_"T00:00:00.000"
+		set value=$zdatetime(value,3,7)		// ie: 2016-03-14T15:54:01Z
+	}
+	set ..StyleId=styleid
+	set ..Data=##class(Excel.Data).%New()
+	set ..Data.Type=type
+	set ..Data.Value=value
+	set ..MergeAcross=expandleft
+	set ..MergeDown=expanddown
+]]></Implementation>
+</Method>
+
+<Method name="KillData">
+<Implementation><![CDATA[
+	set ..StyleId="Default"
+	set ..Data=""
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Cell">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,66522.658462</TimeChanged>
+<TimeCreated>62062,57080.591593</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="StyleId">
+<Type>%String</Type>
+<InitialExpression>"Default"</InitialExpression>
+<Parameter name="XMLNAME" value="ss:StyleID"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="MergeAcross">
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:MergeAcross"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="MergeDown">
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:MergeDown"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Data">
+<Type>Excel.Data</Type>
+</Property>
+
+<Method name="SetData">
+<Description>
+Record data in the cell
+Attention! When DateTime record serve $Horolog</Description>
+<FormalSpec>value:%String,type:%String="String",styleid:%String="Default",expandleft:%Integer="",expanddown:%Integer=""</FormalSpec>
+<Implementation><![CDATA[
+	if type="DateTime" {
+		//set value=$zdate(value,3)_"T00:00:00.000"
+		set value=$zdatetime(value,3,7)		// ie: 2016-03-14T15:54:01Z
+	}
+	set ..StyleId=styleid
+	set ..Data=##class(Excel.Data).%New()
+	set ..Data.Type=type
+	set ..Data.Value=value
+	set ..MergeAcross=expandleft
+	set ..MergeDown=expanddown
+]]></Implementation>
+</Method>
+
+<Method name="KillData">
+<Implementation><![CDATA[
+	set ..StyleId="Default"
+	set ..Data=""
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Column">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,61720.0789</TimeChanged>
+<TimeCreated>62063,48654.21952</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Width">
+<Description>
+Width column</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Width"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="AutoFitWidth">
+<Description>
+Autogrowth</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:AutoFitWidth"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Column">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,61720.0789</TimeChanged>
+<TimeCreated>62063,48654.21952</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Width">
+<Description>
+Width column</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Width"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="AutoFitWidth">
+<Description>
+Autogrowth</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:AutoFitWidth"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Data">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32284.0315</TimeChanged>
+<TimeCreated>62062,57081.151231</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Type">
+<Description>
+Cell Type: String,Nubmer,DateTime</Description>
+<Type>%String</Type>
+<InitialExpression>"String"</InitialExpression>
+<Parameter name="VALUELIST" value=",String,Nubmer,DateTime"/>
+<Parameter name="XMLNAME" value="ss:Type"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Value">
+<Type>%String</Type>
+<Parameter name="XMLPROJECTION" value="CONTENT"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Data">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32284.0315</TimeChanged>
+<TimeCreated>62062,57081.151231</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Type">
+<Description>
+Cell Type: String,Nubmer,DateTime</Description>
+<Type>%String</Type>
+<InitialExpression>"String"</InitialExpression>
+<Parameter name="VALUELIST" value=",String,Nubmer,DateTime"/>
+<Parameter name="XMLNAME" value="ss:Type"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Value">
+<Type>%String</Type>
+<Parameter name="XMLPROJECTION" value="CONTENT"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Document">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38639.228285</TimeChanged>
+<TimeCreated>62062,34759.395134</TimeCreated>
+<Inheritance>right</Inheritance>
+<LegacyInstanceContext>1</LegacyInstanceContext>
+
+<Property name="xmlns">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:spreadsheet"</InitialExpression>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="o">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:office"</InitialExpression>
+<Parameter name="XMLNAME" value="xmlns:o"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="x">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:excel"</InitialExpression>
+<Parameter name="XMLNAME" value="xmlns:x"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="ss">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:spreadsheet"</InitialExpression>
+<Parameter name="XMLNAME" value="xmlns:ss"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="html">
+<Type>%String</Type>
+<InitialExpression>"http://www.w3.org/TR/REC-html40"</InitialExpression>
+<Parameter name="XMLNAME" value="xmlns:html"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="DocumentProperties">
+<Type>Excel.DocumentProperties</Type>
+</Property>
+
+<Property name="OfficeDocumentSettings">
+<Type>Excel.OfficeDocumentSettings</Type>
+</Property>
+
+<Property name="ExcelWorkbook">
+<Type>Excel.ExcelWorkbook</Type>
+</Property>
+
+<Property name="Indent">
+<Description>
+Indent each line</Description>
+<Type>%Boolean</Type>
+<InitialExpression>0</InitialExpression>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Property name="Styles">
+<Description>
+Work through the method Style</Description>
+<Type>Excel.Style</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:ID"/>
+</Property>
+
+<Property name="Worksheets">
+<Description>
+Work through the method WorkSheet</Description>
+<Type>Excel.WorkSheet</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Name"/>
+<Parameter name="XMLNAME" value="Worksheet"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Property name="Debug">
+<Type>%Boolean</Type>
+<InitialExpression>0</InitialExpression>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Method name="Style">
+<Description>
+Get the style you want, if not - create</Description>
+<FormalSpec>name:%String=""</FormalSpec>
+<ReturnType>Excel.Style</ReturnType>
+<Implementation><![CDATA[
+	quit:(name="") ""
+	do:'..Styles.IsDefined(name) ..Styles.SetAt(##class(Excel.Style).%New(),name)
+	quit ..Styles.GetAt(name)
+]]></Implementation>
+</Method>
+
+<Method name="WorkSheet">
+<Description>
+Get the right list, if not - create</Description>
+<FormalSpec>name:%String=""</FormalSpec>
+<ReturnType>Excel.WorkSheet</ReturnType>
+<Implementation><![CDATA[
+	quit:(name="") ""
+	do:'..Worksheets.IsDefined(name) ..Worksheets.SetAt(##class(Excel.WorkSheet).%New(),name)
+	quit ..Worksheets.GetAt(name)
+]]></Implementation>
+</Method>
+
+<Method name="Normalize">
+<Description>
+Correction of errors, including the expansion of cross-cells
+Testing of styles and types of cells (not yet implemented)</Description>
+<Implementation><![CDATA[
+	set key=""
+	for {
+		set key=..Worksheets.Next(key)
+		quit:(key="")
+		do ..Worksheets.GetAt(key).Normalize(..Debug)
+	}
+]]></Implementation>
+</Method>
+
+<Method name="%OnNew">
+<Description>
+Create a dummy document, initialize nested objects</Description>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..DocumentProperties=##class(Excel.DocumentProperties).%New()
+	set ..OfficeDocumentSettings=##class(Excel.OfficeDocumentSettings).%New()
+	set ..ExcelWorkbook=##class(Excel.ExcelWorkbook).%New()
+	set ..Style("Default").Name="Normal"
+	quit $system.Status.OK()
+]]></Implementation>
+</Method>
+
+<Method name="SaveToFile">
+<FormalSpec>filename:%String</FormalSpec>
+<Implementation><![CDATA[
+	do ..Normalize()  
+	set writer=##class(%XML.Writer).%New()
+	#;set writer.Charset="windows-1251"
+	do writer.OutputToFile(filename)
+	set writer.Indent=..Indent
+	do writer.Write("<?mso-application progid=""Excel.Sheet""?>")
+	do writer.RootObject(%this,"Workbook")
+]]></Implementation>
+</Method>
+
+<Method name="SaveToGlobal">
+<FormalSpec>location:%String</FormalSpec>
+<Implementation><![CDATA[
+	kill @location
+	do ..Normalize() 
+	set stream=##class(%GlobalCharacterStream).%New()
+	do stream.%LocationSet(location)
+	do stream.Clear()
+
+	set writer=##class(%XML.Writer).%New()
+	#;set writer.Charset="windows-1251"
+	do writer.OutputToStream(stream)
+	do writer.Write("<?mso-application progid=""Excel.Sheet""?>")
+	do writer.RootObject(%this,"Workbook")
+
+	do stream.%Save()
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.DocumentProperties">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32318.379021</TimeChanged>
+<TimeCreated>62062,50297.657323</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Parameter name="TIMEZONE">
+<Description>
+$ZTIMEZONE VALUE FOR CENTRAL STD TIME = 6 * 60 = 360</Description>
+<Default>360</Default>
+</Parameter>
+
+<Property name="xmlns">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:office"</InitialExpression>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Author">
+<Type>%String</Type>
+<InitialExpression>"Concepcion, Rodolfo"</InitialExpression>
+</Property>
+
+<Property name="LastAuthor">
+<Type>%String</Type>
+<InitialExpression>"Concepcion, Rodolfo"</InitialExpression>
+</Property>
+
+<Property name="Created">
+<Description>
+i.e: 2016-03-14T15:54:01Z</Description>
+<Type>%String</Type>
+<InitialExpression>$zdatetime($now(..#TIMEZONE),3,7)</InitialExpression>
+</Property>
+
+<Property name="LastSaved">
+<Description>
+i.e: 2016-03-14T15:54:01Z</Description>
+<Type>%String</Type>
+<InitialExpression>$zdatetime($now(..#TIMEZONE),3,7)</InitialExpression>
+</Property>
+
+<Property name="Version">
+<Type>%String</Type>
+<InitialExpression>"14.00"</InitialExpression>
+</Property>
+</Class>
+
+
+<Class name="Excel.ExcelWorkbook">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,69273.22724</TimeChanged>
+<TimeCreated>62062,50887.217562</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="xmlns">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:excel"</InitialExpression>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="WindowHeight">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="WindowWidth">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="WindowTopX">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="WindowTopY">
+<Type>%Integer</Type>
+</Property>
+
+<Property name="ProtectStructure">
+<Type>%String</Type>
+<InitialExpression>"False"</InitialExpression>
+</Property>
+
+<Property name="ProtectWindows">
+<Type>%String</Type>
+<InitialExpression>"False"</InitialExpression>
+</Property>
+
+<Property name="DisplaySmartTags">
+<Type>%String</Type>
+<InitialExpression>"None"</InitialExpression>
+</Property>
+
+<Property name="RefModeR1C1">
+<Type>%String</Type>
+<Parameter name="XMLPROJECTION" value="ELEMENT"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Font">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32455.66541</TimeChanged>
+<TimeCreated>62063,42005.36122</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="FontName">
+<Description>
+font
+Arial, MS Sans Serif, etc</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:FontName"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Family">
+<Description>
+Font font family. It is not clear whether this effects on anything
+Serif,Roman	</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="x:Family"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Color">
+<Description>
+Font Color
+#000000</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Color"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="CharSet">
+<Description>
+What is it - I do not know, maybe the code page
+204</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="x:CharSet"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Size">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Size"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Bold">
+<Description>
+Boldness
+1</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Bold"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Italic">
+<Description>
+Italic
+1</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Italic"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Underline">
+<Description>
+Underline, different types are possible
+Single, Double</Description>
+<Type>%Integer</Type>
+<Parameter name="VALUELIST" value=",Single,Double"/>
+<Parameter name="XMLNAME" value="ss:Underline"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Font">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32455.66541</TimeChanged>
+<TimeCreated>62063,42005.36122</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="FontName">
+<Description>
+font
+Arial, MS Sans Serif, etc</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:FontName"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Family">
+<Description>
+Font font family. It is not clear whether this effects on anything
+Serif,Roman	</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="x:Family"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Color">
+<Description>
+Font Color
+#000000</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Color"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="CharSet">
+<Description>
+What is it - I do not know, maybe the code page
+204</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="x:CharSet"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Size">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Size"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Bold">
+<Description>
+Boldness
+1</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Bold"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Italic">
+<Description>
+Italic
+1</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Italic"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Underline">
+<Description>
+Underline, different types are possible
+Single, Double</Description>
+<Type>%Integer</Type>
+<Parameter name="VALUELIST" value=",Single,Double"/>
+<Parameter name="XMLNAME" value="ss:Underline"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Interior">
+<Description>
+Class responsible for filling the cell</Description>
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32505.524607</TimeChanged>
+<TimeCreated>62063,49877.866457</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Color">
+<Description>
+Fill Color
+#FF0000 </Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Color"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Pattern">
+<Description>
+Fill Pattern
+Solid,Gray125,Gray75,Gray50,Gray25,HorzStripe,VertStripe,ReverseDiagStripe
+ThinDiagStripe,DiagCross,ThickDiagCross,ThinHorzCross,ThinDiagCross </Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Pattern"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="PatternColor">
+<Description>
+Additional color pattern
+#000000</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:PatternColor"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Interior">
+<Description>
+Class responsible for filling the cell</Description>
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32505.524607</TimeChanged>
+<TimeCreated>62063,49877.866457</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Color">
+<Description>
+Fill Color
+#FF0000 </Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Color"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Pattern">
+<Description>
+Fill Pattern
+Solid,Gray125,Gray75,Gray50,Gray25,HorzStripe,VertStripe,ReverseDiagStripe
+ThinDiagStripe,DiagCross,ThickDiagCross,ThinHorzCross,ThinDiagCross </Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Pattern"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="PatternColor">
+<Description>
+Additional color pattern
+#000000</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:PatternColor"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Layout">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32527.152078</TimeChanged>
+<TimeCreated>62063,67288.952399</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Orientation">
+<Description>
+The position of the page
+Landscape</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="x:Orientation"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.Layout">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32527.152078</TimeChanged>
+<TimeCreated>62063,67288.952399</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Orientation">
+<Description>
+The position of the page
+Landscape</Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="x:Orientation"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.NumberFormat">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,65222.21598</TimeChanged>
+<TimeCreated>62063,45324.516404</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Format">
+<Description>
+data format
+dd/mm/yyyy
+#,##0.00
+Short Date </Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Format"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.NumberFormat">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,65222.21598</TimeChanged>
+<TimeCreated>62063,45324.516404</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Format">
+<Description>
+data format
+dd/mm/yyyy
+#,##0.00
+Short Date </Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Format"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.OfficeDocumentSettings">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,32558.38568</TimeChanged>
+<TimeCreated>63991,66468.869078</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="xmlns">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:office"</InitialExpression>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="AllowPNG">
+<Type>%String</Type>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	#;set ..AllowPNG=$char(0)	// NULL value to create this xml output: <AllowPNG/>
+	quit $system.Status.OK()
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Project name="Excel" LastModified="2016-04-14 16:30:38.58462" Target="##class(HourGuard.Excel).Test()" TargetType="2">
+  <Items>
+    <ProjectItem name="Excel.Alignment" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Border" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Cell" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Column" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Data" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Document" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.DocumentProperties" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.ExcelWorkbook" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Font" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Interior" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Layout" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.NumberFormat" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.OfficeDocumentSettings" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.PageMargins" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.PageSetup" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Row" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Style" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.Table" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.WorkSheet" type="CLS"></ProjectItem>
+    <ProjectItem name="Excel.WorksheetOptions" type="CLS"></ProjectItem>
+  </Items>
+</Project>
+
+
+<Class name="Excel.PageMargins">
+<Description>
+Indented printing</Description>
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38261.17742</TimeChanged>
+<TimeCreated>62063,67333.139058</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Bottom">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Bottom"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Left">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Left"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Right">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Right"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Top">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Top"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.PageMargins">
+<Description>
+Indented printing</Description>
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38261.17742</TimeChanged>
+<TimeCreated>62063,67333.139058</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Bottom">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Bottom"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Left">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Left"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Right">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Right"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Top">
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="x:Top"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+</Class>
+
+
+<Class name="Excel.PageSetup">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38280.204948</TimeChanged>
+<TimeCreated>62063,67173.681259</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Layout">
+<Type>Excel.Layout</Type>
+</Property>
+
+<Property name="PageMargins">
+<Type>Excel.PageMargins</Type>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..Layout=##class(Excel.Layout).%New()
+	set ..PageMargins=##class(Excel.PageMargins).%New()
+	quit 1
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.PageSetup">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38280.204948</TimeChanged>
+<TimeCreated>62063,67173.681259</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Layout">
+<Type>Excel.Layout</Type>
+</Property>
+
+<Property name="PageMargins">
+<Type>Excel.PageMargins</Type>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..Layout=##class(Excel.Layout).%New()
+	set ..PageMargins=##class(Excel.PageMargins).%New()
+	quit 1
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Row">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38527.995631</TimeChanged>
+<TimeCreated>62062,57081.734157</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Cells">
+<Type>Excel.Cell</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Index"/>
+<Parameter name="XMLNAME" value="Cell"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Property name="AutoFitHeight">
+<Description>
+Automatic alignment height of the cell
+0,1</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:AutoFitHeight"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Height">
+<Description>
+cell height</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Height"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Method name="Cell">
+<Description>
+Return the desired cell</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Cell</ReturnType>
+<Implementation><![CDATA[
+	quit:(num="") ""
+	do:'..Cells.IsDefined(num) ..Cells.SetAt(##class(Excel.Cell).%New(),num)	
+	quit ..Cells.GetAt(num)
+]]></Implementation>
+</Method>
+
+<Method name="KillCell">
+<Description>
+Forced removal of the cell</Description>
+<FormalSpec>num:%Integer,debug:%Boolean=0</FormalSpec>
+<Implementation><![CDATA[
+	write:debug "res=",..Cells.IsDefined(num)
+	do:..Cells.IsDefined(num) ..Cells.RemoveAt(num)
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Row">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,38527.995631</TimeChanged>
+<TimeCreated>62062,57081.734157</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Cells">
+<Type>Excel.Cell</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Index"/>
+<Parameter name="XMLNAME" value="Cell"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Property name="AutoFitHeight">
+<Description>
+Automatic alignment height of the cell
+0,1</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:AutoFitHeight"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Height">
+<Description>
+cell height</Description>
+<Type>%Integer</Type>
+<Parameter name="XMLNAME" value="ss:Height"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Method name="Cell">
+<Description>
+Return the desired cell</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Cell</ReturnType>
+<Implementation><![CDATA[
+	quit:(num="") ""
+	do:'..Cells.IsDefined(num) ..Cells.SetAt(##class(Excel.Cell).%New(),num)	
+	quit ..Cells.GetAt(num)
+]]></Implementation>
+</Method>
+
+<Method name="KillCell">
+<Description>
+Forced removal of the cell</Description>
+<FormalSpec>num:%Integer,debug:%Boolean=0</FormalSpec>
+<Implementation><![CDATA[
+	write:debug "res=",..Cells.IsDefined(num)
+	do:..Cells.IsDefined(num) ..Cells.RemoveAt(num)
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Style">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,71905.513659</TimeChanged>
+<TimeCreated>62062,51403.187035</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Name">
+<Description><![CDATA[
+Style name, arbitrarily <br>
+But definitely has a style Default <br>]]></Description>
+<Type>%String</Type>
+<Parameter name="XMLNAME" value="ss:Name"/>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Property name="Alignment">
+<Description>
+The object that holds the alignment properties</Description>
+<Type>Excel.Alignment</Type>
+</Property>
+
+<Property name="Borders">
+<Description>
+array boundaries</Description>
+<Type>Excel.Border</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Position"/>
+</Property>
+
+<Property name="Font">
+<Description>
+Fonts </Description>
+<Type>Excel.Font</Type>
+</Property>
+
+<Property name="Interior">
+<Type>Excel.Interior</Type>
+</Property>
+
+<Property name="Format">
+<Description><![CDATA[
+Data format for the job. actually stored NumberFormat <br>
+dd/mm/yyyy<br>
+#,##0.00<br>
+Short Date<br>]]></Description>
+<Type>%String</Type>
+<Calculated>1</Calculated>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Property name="Protection">
+<Type>%String</Type>
+</Property>
+
+<Method name="FormatGet">
+<ReturnType>%String</ReturnType>
+<Implementation><![CDATA[	quit ..NumberFormat.Format
+]]></Implementation>
+</Method>
+
+<Method name="FormatSet">
+<FormalSpec>value:%String</FormalSpec>
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set:..NumberFormat="" ..NumberFormat=##class(Excel.NumberFormat).%New()
+	set ..NumberFormat.Format=value
+	quit $system.Status.OK()
+]]></Implementation>
+</Method>
+
+<Property name="NumberFormat">
+<Description>
+The format of the numeric data storage</Description>
+<Type>Excel.NumberFormat</Type>
+</Property>
+
+<Property name="BorderLeft">
+<Description>
+The left boundary</Description>
+<Type>Excel.Border</Type>
+<Calculated>1</Calculated>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Property name="BorderRight">
+<Description>
+right border</Description>
+<Type>Excel.Border</Type>
+<Calculated>1</Calculated>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Property name="BorderTop">
+<Description>
+Upper limit</Description>
+<Type>Excel.Border</Type>
+<Calculated>1</Calculated>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Property name="BorderBottom">
+<Description>
+Bottom line</Description>
+<Type>Excel.Border</Type>
+<Calculated>1</Calculated>
+<Parameter name="XMLPROJECTION" value="NONE"/>
+</Property>
+
+<Method name="Border">
+<Description>
+Appeal to the border, if necessary, its creation</Description>
+<FormalSpec>key</FormalSpec>
+<Private>1</Private>
+<ReturnType>Excel.Border</ReturnType>
+<Implementation><![CDATA[
+	do:'..Borders.IsDefined(key) ..Borders.SetAt(##class(Excel.Border).%New(),key)
+	quit ..Borders.GetAt(key)
+]]></Implementation>
+</Method>
+
+<Method name="BorderLeftGet">
+<Implementation><![CDATA[	quit ..Border("Left")
+]]></Implementation>
+</Method>
+
+<Method name="BorderRightGet">
+<Implementation><![CDATA[	quit ..Border("Right")
+]]></Implementation>
+</Method>
+
+<Method name="BorderBottomGet">
+<Implementation><![CDATA[	quit ..Border("Bottom")
+]]></Implementation>
+</Method>
+
+<Method name="BorderTopGet">
+<Implementation><![CDATA[	quit ..Border("Top")
+]]></Implementation>
+</Method>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..Alignment=##class(Excel.Alignment).%New()
+	set ..Font=##class(Excel.Font).%New()
+	set ..Interior=##class(Excel.Interior).%New()
+	set ..Protection=$char(0)
+	quit $system.Status.OK()
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Table">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,64884.618078</TimeChanged>
+<TimeCreated>62062,56795.374535</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Columns">
+<Type>Excel.Column</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Caption"/>
+<Parameter name="XMLNAME" value="Column"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Property name="Rows">
+<Type>Excel.Row</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Index"/>
+<Parameter name="XMLNAME" value="Row"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Method name="Row">
+<Description>
+Return the necessary line</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Row</ReturnType>
+<Implementation><![CDATA[
+	quit:num="" ""
+	if '..Rows.IsDefined(num)  {
+		set i1=..Rows.Count()+1
+		for i=i1:1:num {
+			do ..Rows.SetAt(##class(Excel.Row).%New(),i)
+		}
+	}
+	quit ..Rows.GetAt(num)
+]]></Implementation>
+</Method>
+
+<Method name="Column">
+<Description>
+Return the column</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Column</ReturnType>
+<Implementation><![CDATA[
+	quit:num="" ""
+	if '..Columns.IsDefined(num) {
+		set i1=..Columns.Count()+1
+		for i=i1:1:num {
+			do ..Columns.SetAt(##class(Excel.Column).%New(),i)
+		}
+	}
+	quit ..Columns.GetAt(num)
+]]></Implementation>
+</Method>
+
+<Method name="Cell">
+<Description>
+Return the desired cell</Description>
+<FormalSpec>row:%Integer,col:%Integer</FormalSpec>
+<Implementation><![CDATA[	quit ..Row(row).Cell(col)
+]]></Implementation>
+</Method>
+
+<Method name="Normalize">
+<FormalSpec>debug:%Boolean</FormalSpec>
+<Implementation><![CDATA[
+	for row=1:1:..Rows.Count() {
+		for col=1:1:255	{
+			continue:'..Row(row).Cells.IsDefined(col) //cells no longer
+			set mergeleft=..Row(row).Cell(col).MergeAcross
+			set mergedown=..Row(row).Cell(col).MergeDown
+			write:debug !,"test row=",row," col=",col," left=",+mergeleft," down=",+mergedown
+			for i=0:1:mergeleft {
+				for j=0:1:mergedown	{
+					write:debug&&((i>0)||(j>0)) !,"kill row=",row+j," col=",col+i," "
+					do:(i>0)||(j>0) ..Row(row+j).KillCell(col+i,debug)
+				}
+			}
+		}
+	}
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.Table">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,64884.618078</TimeChanged>
+<TimeCreated>62062,56795.374535</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Columns">
+<Type>Excel.Column</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Caption"/>
+<Parameter name="XMLNAME" value="Column"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Property name="Rows">
+<Type>Excel.Row</Type>
+<Collection>array</Collection>
+<Parameter name="XMLKEYNAME" value="ss:Index"/>
+<Parameter name="XMLNAME" value="Row"/>
+<Parameter name="XMLPROJECTION" value="XELEMENT"/>
+</Property>
+
+<Method name="Row">
+<Description>
+Return the necessary line</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Row</ReturnType>
+<Implementation><![CDATA[
+	quit:num="" ""
+	if '..Rows.IsDefined(num)  {
+		set i1=..Rows.Count()+1
+		for i=i1:1:num {
+			do ..Rows.SetAt(##class(Excel.Row).%New(),i)
+		}
+	}
+	quit ..Rows.GetAt(num)
+]]></Implementation>
+</Method>
+
+<Method name="Column">
+<Description>
+Return the column</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Column</ReturnType>
+<Implementation><![CDATA[
+	quit:num="" ""
+	if '..Columns.IsDefined(num) {
+		set i1=..Columns.Count()+1
+		for i=i1:1:num {
+			do ..Columns.SetAt(##class(Excel.Column).%New(),i)
+		}
+	}
+	quit ..Columns.GetAt(num)
+]]></Implementation>
+</Method>
+
+<Method name="Cell">
+<Description>
+Return the desired cell</Description>
+<FormalSpec>row:%Integer,col:%Integer</FormalSpec>
+<Implementation><![CDATA[	quit ..Row(row).Cell(col)
+]]></Implementation>
+</Method>
+
+<Method name="Normalize">
+<FormalSpec>debug:%Boolean</FormalSpec>
+<Implementation><![CDATA[
+	for row=1:1:..Rows.Count() {
+		for col=1:1:255	{
+			continue:'..Row(row).Cells.IsDefined(col) //cells no longer
+			set mergeleft=..Row(row).Cell(col).MergeAcross
+			set mergedown=..Row(row).Cell(col).MergeDown
+			write:debug !,"test row=",row," col=",col," left=",+mergeleft," down=",+mergedown
+			for i=0:1:mergeleft {
+				for j=0:1:mergedown	{
+					write:debug&&((i>0)||(j>0)) !,"kill row=",row+j," col=",col+i," "
+					do:(i>0)||(j>0) ..Row(row+j).KillCell(col+i,debug)
+				}
+			}
+		}
+	}
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.WorkSheet">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63991,69620.770095</TimeChanged>
+<TimeCreated>62062,55437.167593</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="Table">
+<Type>Excel.Table</Type>
+</Property>
+
+<Property name="WorksheetOptions">
+<Type>Excel.WorksheetOptions</Type>
+</Property>
+
+<Method name="Normalize">
+<FormalSpec>debug:%Boolean</FormalSpec>
+<Implementation><![CDATA[	do ..Table.Normalize(debug)
+]]></Implementation>
+</Method>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..Table=##class(Excel.Table).%New()
+	set ..WorksheetOptions=##class(Excel.WorksheetOptions).%New()
+	quit $system.Status.OK()
+]]></Implementation>
+</Method>
+
+<Method name="Cell">
+<Description>
+Return the desired cell</Description>
+<FormalSpec>row:%Integer,col:%Integer</FormalSpec>
+<ReturnType>Excel.Cell</ReturnType>
+<Implementation><![CDATA[	quit ..Table.Cell(row,col)
+]]></Implementation>
+</Method>
+
+<Method name="Row">
+<Description>
+Return the necessary line</Description>
+<FormalSpec>row:%Integer</FormalSpec>
+<ReturnType>Excel.Row</ReturnType>
+<Implementation><![CDATA[	quit ..Table.Row(row)
+]]></Implementation>
+</Method>
+
+<Method name="Column">
+<Description>
+Return the column</Description>
+<FormalSpec>num:%Integer</FormalSpec>
+<ReturnType>Excel.Column</ReturnType>
+<Implementation><![CDATA[	quit ..Table.Column(num)
+]]></Implementation>
+</Method>
+</Class>
+
+
+<Class name="Excel.WorksheetOptions">
+<Super>%RegisteredObject,%XML.Adaptor</Super>
+<TimeChanged>63992,31759.09955</TimeChanged>
+<TimeCreated>62063,66949.998877</TimeCreated>
+<Inheritance>right</Inheritance>
+
+<Property name="PageSetup">
+<Type>Excel.PageSetup</Type>
+</Property>
+
+<Property name="xmlns">
+<Type>%String</Type>
+<InitialExpression>"urn:schemas-microsoft-com:office:excel"</InitialExpression>
+<Parameter name="XMLPROJECTION" value="ATTRIBUTE"/>
+</Property>
+
+<Method name="%OnNew">
+<ReturnType>%Status</ReturnType>
+<Implementation><![CDATA[
+	set ..PageSetup=##class(Excel.PageSetup).%New()
+	quit 1
+]]></Implementation>
+</Method>
+</Class>
+</Export>
